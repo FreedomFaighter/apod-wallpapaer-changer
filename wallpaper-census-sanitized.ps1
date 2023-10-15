@@ -1,8 +1,9 @@
 $yesOrNoResponse = Read-Host -Prompt "Attempt to get new APOD image from NASA's APOD api? (y?) anything other then y for yes will exit the script"
-
+$exitCode = 0
 if($yesOrNoResponse -ne 'y')
 {
-    exit 64
+    $exitCode = $exitCode + 64
+    Exit $exitCode
 }
 
 $setwallpapersrc=@'
