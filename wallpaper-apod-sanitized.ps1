@@ -1,11 +1,3 @@
-$yesOrNoResponse = Read-Host -Prompt "Attempt to get new APOD image from NASA's APOD api? (y?) anything other then y for yes will exit the script"
-$exitCode = 0
-if($yesOrNoResponse -ne 'y')
-{
-    $exitCode = $exitCode + 64
-    Exit $exitCode
-}
-
 <#PSScriptInfo
     .VERSION 1.0.0.0
     .GUID cfc2e719-67d8-4722-b594-3d198a1206c7
